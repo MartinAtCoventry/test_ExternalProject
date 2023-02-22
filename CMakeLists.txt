@@ -6,5 +6,5 @@ add_library(jascontrol STATIC IMPORTED)
 set_target_properties(jascontrol PROPERTIES IMPORTED_LOCATION static_lib/libjascontrol.a)
 set_target_properties(jascontrol PROPERTIES INTERFACE_INCLUDE_DIRECTORIES include)
 
-install(TARGETS ${PROJECT_NAME}
+install(FILES ${PROJECT_SOURCE_DIR}/static_lib/libjascontrol.a
         LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib)
